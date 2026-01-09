@@ -11,23 +11,31 @@
     border-radius: 4px;
     color: #FFFFFF;
 }
+.hover:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(255, 0, 0, 0.5);
+}
+.hover1:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
 .small{
     font-size: 16px;
     line-height: 20px;
-
 }
 
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  
+  font-optical-sizing: auto;  
 }
 
-
-
-
-
-
+.width{
+    width: 85%;
+    max-width: 1360px;
+}
 
 /* nav */
 
@@ -35,14 +43,9 @@
 
 #nav-container{
     display: flex;
-    justify-content: space-between;
-    margin: 16px auto;
-    width: 66.6%;
-    max-width: 1057px;
+    margin: 0 auto;
+    padding: 16px;
     align-items: center;
-    /* border: 1px solid rgb(210, 20, 20); */
-    
-   
 }
 .nav-list ul{
     display: flex;
@@ -63,17 +66,14 @@
 
 #bannar .bannar-container{
     background-image: url("../assets/hero-bg.png");
-    margin-top: 0;
     height: 674px;
     width: 100%;
     border: 1px solid black;
-    
-
+    /* padding: 115.5px; */
 }
 
 .bannar-content{
-    text-align: center;
-    
+    text-align: center;    
 }
 .bannar-content h4{
     margin-top: 115.5px;
@@ -90,36 +90,33 @@
     max-width: 770px;
     font-size: 72px;
     color: #FFFFFF;
-    
-
 }
 .bannar-content h1 span{
     color: #469165;
 }
 
 .bannar-content p{
-    margin-top: 16px;
     font-size: 18px;
-    color: #FFFFFF;
-    max-width: 588px;
-    line-height: 24px;
+    color: #FFFFFF;   
 }
 .bannar-content .buttons{
     margin-top: 32px;
-    gap: 16px;
-    
+    gap: 16px;    
 }
 .bannar-content button{
     font-size: 16px;
     padding: 16.5px;
-
+}
+.btn-transparent{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
 }
 
 /* adding card's part */
 
 #card{
-    width: 85%;
-    max-width: 1360px;
     text-align: center;
     /* border: 1px solid black; */
 }
@@ -127,54 +124,53 @@
 .card-container{
     margin-top: 70px;
 }
+
 .card-container h2{
     font-size: 48px;
     font-weight: bold;
     color: #001931;
-
 }
 .card-container p{
     font-size: 16px;
     line-height: 20px;
     color: #627382;
-
 }
+
 .card-box{
     display: flex;
     justify-content: center;
     gap: 24px;
-    
 }
+
 .card{
     margin-top: 44px;
     height: 300px;
     width: 322px;
-    padding: 24px;
+    padding: 69.5px 24px 0;
     box-shadow: 1px 1px 50px rgba(80, 45, 45, 0.094);
 }
+
 .card h3{
     margin-top: 16px;
     font-size: 24px;
     font-weight: 600;
     color: #001931;
-
 }
+
 .card p{
     margin-top: 16px;
     font-size: 16px;
     line-height: 20px;
     color: #627382;
-
 }
+
 .card img{
-    margin-top: 69.5px
-    height  60px;
+    height: 60px;
     width: 60px;
     background-color: #F95555;
     padding-top: 69.5px;
     border-radius: 50px;
-   
-    padding: 14px;
+   padding: 14px;
 }
 
 /* the solution part */
@@ -184,8 +180,6 @@
 .solution-container{
     display: flex;
     margin-top: 120px;
-    width: 85%;
-    max-width: 1360px;
     gap: 40px;
     /* border: 1px solid rgb(0, 0, 0); */
 }
@@ -198,7 +192,7 @@
 }
 
 .solution-content{
-    text-align: left;
+    /* text-align: left; */
     margin-top: 120px ;
     /* border: 1px solid black; */
     max-width: 722px;
@@ -217,24 +211,23 @@
     font-weight: bold;
     color: #001931;
     margin-bottom: 16px;
-    
-
 }
+
 
 .solution-content li{
     list-style: none;
     font-size: 16px;
     line-height: 24px;
     gap:6px;
-    /* border: 1px solid rgb(229, 8, 8); */
-   
-    
+    display: flex;
+    text-align: start;
+    align-items:start;
+    justify-content: center;
+    border: 1px solid rgb(229, 8, 8);   
 }
 .solution-content li img{
     height: 20px;
     width: 20px;
-    /* border: 1px solid black; */
-    align-items: end;
     
 }
 
@@ -245,49 +238,47 @@
     margin-bottom: 24px;
 }
 
-/* adding the past part */
+/* adding the last part */
+
+#last-part{
+    margin-top: 120px;
+}
 
 .last-part-container{
-    width: 85%;
-    max-width: 1360px;
-    height: 384px;
+    padding: 80px;
+    margin: 0 auto;
     text-align: center;
-    border: 1px solid black;
-    margin-top: 120px;
     background-color: #F7F6F2;
 }
+
 .last-part-container h2{
     font-size: 40px;
     font-weight: bold;
     color: #001931;
-    margin-top: 80px;
-
 }
+
 .last-part-container p{
-    font-size: 16px;
-    line-height: 20px;
     color: #627382;
-    margin-top: 16px;
+    margin: 16px 0;
 
 }
+
 .last-part-container button{
     padding: 16.5px;
-    margin-top: 16px;
 }
 
 /* adding footer part */
 
 footer{
     margin-top: 120px;
-    padding: 120px 0 0 0;
+    padding: 120px 0;
     
-    width: 100%;
+    /* width: 100%; */
     background-color:#001931; 
     color: #FAFAFA;  
 }
+
 .footer-container{
-    width: 85%;
-    max-width: 1360px;
     margin: 0 auto;
 }
 
@@ -297,22 +288,19 @@ footer{
     gap: 1001px; 
     margin-bottom: 80px;  
 }
+
 .footer-top .social-link{
     align-items: center;
     font-size: 20;
     font-weight: 600;
 }
-.foot-bottom{
-    width: 85%;
-    max-width: 1360px;
+.footer-bottom{
     margin-top: 30px;
     margin: 30 auto;
-    border: 1px solid black;
     text-align: center;
 }
-.foot-bottom p{
-    text-align: center;
-    justify-content: center;
-}   
+
+    
+
 
 
