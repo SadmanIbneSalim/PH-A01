@@ -190,6 +190,7 @@
     
 }
 
+
 .solution-content{
     /* text-align: left; */
     margin-top: 120px ;
@@ -211,6 +212,10 @@
     color: #001931;
     margin-bottom: 16px;
 }
+.solution-content ul{
+    margin: 0;
+    padding: 0;
+}
 
 
 .solution-content li{
@@ -219,10 +224,10 @@
     line-height: 24px;
     gap:6px;
     display: flex;
-    text-align: start;
-    align-items:start;
-    justify-content: left;
-    border: 1px solid rgb(229, 8, 8);   
+    /* border: 1px solid rgb(229, 8, 8);    */
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
 }
 .solution-content li img{
     height: 20px;
@@ -235,6 +240,10 @@
     line-height: 24px;
     color: #627382;
     margin-bottom: 24px;
+}
+.solution-content .li-image,
+.solution-content .li-content{
+    margin: 0;
 }
 
 /* adding the last part */
@@ -298,8 +307,5 @@ footer{
     margin: 30 auto;
     text-align: center;
 }
-
-    
-
 
 
