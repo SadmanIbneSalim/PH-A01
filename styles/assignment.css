@@ -16,10 +16,9 @@
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
-    box-shadow: 1px 1px 10px rgba(255, 0, 0, 0.5);
+    box-shadow: 1px 1px 20px rgba(255, 0, 0, 0.5);
 }
 .hover1:hover{
-    cursor: pointer;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 .small{
@@ -222,7 +221,7 @@
     display: flex;
     text-align: start;
     align-items:start;
-    justify-content: center;
+    justify-content: left;
     border: 1px solid rgb(229, 8, 8);   
 }
 .solution-content li img{
